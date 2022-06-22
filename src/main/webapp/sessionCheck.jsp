@@ -22,7 +22,8 @@
 		}
 		
 	%>
-	
+	<br>
+	<a href="login.jsp">로그인페이지로 가기</a>
 	
 </body>
 </html>

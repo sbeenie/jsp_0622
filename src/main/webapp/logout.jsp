@@ -15,11 +15,18 @@
 	<%
 		if(request.isRequestedSessionIdValid() != true){
 			out.println("로그아웃 되셨습니다.<br>");
+			out.println("<a href='login.jsp'>");
 			out.println("로그인<br>");
+			out.println("</a>");
 		} else{
 	%>
 		<br>
 		<a href="logout.jsp">로그아웃</a>
-			}
+		
+	<%
+		}
+	
+	%>
+
 </body>
 </html>
