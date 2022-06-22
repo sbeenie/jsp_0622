@@ -11,8 +11,18 @@
 	<hr>
 	<%
 		String mId = (String)session.getAttribute("memberId");
+		if(mId == null){
+			out.println("로그인<br>");
+		}else{
+	%>	
+		현재 <%= mId %>님은 로그인 중입니다.<br>
+		<a href="logout.jsp">로그아웃</a>
 	
-	
+	<%
+		}
+		
 	%>
+	
+	
 </body>
 </html>
